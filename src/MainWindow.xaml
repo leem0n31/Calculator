@@ -1,0 +1,19 @@
+﻿<Window x:Class="calcul.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:calcul"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="NumberA" HorizontalAlignment="Left" Height="78" Margin="70,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="187" TextChanged="NumberA_TextChanged"/>
+        <TextBox x:Name="Operator" HorizontalAlignment="Left" Height="42" Margin="289,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="48" TextChanged="Operator_TextChanged"/>
+        <TextBox x:Name="NumberB" HorizontalAlignment="Left" Height="78" Margin="368,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="190" TextChanged="NumberB_TextChanged"/>
+        <Button x:Name="Calculate" Content="=" HorizontalAlignment="Left" Height="42" Margin="563,0,0,0" VerticalAlignment="Center" Width="50" Click="Calculate_Click" Background="#FFD1F5FF" FontWeight="Bold" FontSize="20"/>
+        <Label x:Name="ResultL" Content="" HorizontalAlignment="Left" Height="78" Margin="618,0,0,0" VerticalAlignment="Center" Width="160"/>
+        <TextBlock HorizontalAlignment="Left" Height="82" Margin="240,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="348" FontWeight="Bold" FontSize="48"><Run Language="ru-ru" Text="КАЛЬКУЛЯТОР"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="163" Margin="256,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357" FontSize="18"><Run Text="+ - Сложение"/><LineBreak/><Run Text="- - Вычитание"/><LineBreak/><Run Text="* - Умножение"/><LineBreak/><Run Text="/ - Деление"/><LineBreak/><Run Text="^ - Степень"/><LineBreak/><Run Text="! - факториал"/><LineBreak/><Run Text="Пустое поле - Смена системы счисления"/></TextBlock>
+
+    </Grid>
+</Window>
